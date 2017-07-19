@@ -43,7 +43,8 @@ void setup() {
 
 void loop() {
 
-  robot_status.battery = cnt++;
+  robot_status.battery_voltage = cnt++;
+  robot_status.battery_current = cnt++;
   robot_status.current_sx = analogRead(cspin[0]);
   robot_status.current_dx = analogRead(cspin[0]);
 

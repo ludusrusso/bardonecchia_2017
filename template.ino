@@ -34,7 +34,8 @@
 
   In scrittura:
 
-  robot_status.battery
+  robot_status.battery_voltage
+  robot_status.battery_current
   robot_status.current_sx
   robot_status.current_dx
   robot_status.distance
@@ -59,7 +60,7 @@ void setup() {
 
 void loop() {
 
-  robot_status.battery = cnt++;
+  robot_status.battery_voltage = cnt++;
   robot_status.current_sx = analogRead(cspin[0]);
   robot_status.current_dx = analogRead(cspin[0]);
 
